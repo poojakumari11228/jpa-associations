@@ -14,7 +14,7 @@ public class AuthorServiceImpl implements AuthorService {
     @Autowired
     AuthorRepo authorRepo;
     @Override
-    public List<Author> findByBookTitle(String title) {
-        return authorRepo.findByBooksTitle(title);
+    public List<Author> findByBookTitle(String title, String isbn) {
+        return authorRepo.findByBooks_TitleAndIsbn(title, isbn);
     }
 }

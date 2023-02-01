@@ -24,9 +24,9 @@ public class AuthortController {
     }
 
 
-    @GetMapping("/book/{title}")
-    public List<Author> getByBookTitle(@PathVariable String title) {
-        return authorService.findByBookTitle(title);
+    @GetMapping("/book/{title}/{isbn}")
+    public List<Author> getByBookTitle(@PathVariable String title, @PathVariable String isbn) {
+        return authorService.findByBookTitle(title, isbn);
     }
 
 }

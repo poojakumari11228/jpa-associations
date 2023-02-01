@@ -6,5 +6,5 @@ import java.util.List;
 
 public interface AuthorService {
 
-    List<Author> findByBookTitle(String title);
+    List<Author> findByBookTitle(String title, String isbn);
 }
